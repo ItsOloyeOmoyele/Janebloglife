@@ -143,6 +143,10 @@ h3 {
   background-color: white;
 }
 
+.titleHeading img {
+  width: 100%;
+}
+
 .titleHeading h2 {
   text-align: center;
   font-weight: 500;
