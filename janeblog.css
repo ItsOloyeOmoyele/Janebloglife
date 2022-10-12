@@ -209,10 +209,11 @@ h4 {
 }
 
 @media screen and (min-width: 900px) {
-  #inspiration {
-    text-align: center;
-  }
   .inspirationpics {
     width: 24.5%;
+    height: 250px;
+  }
+  .inspirationpics img {
+    height: 100%;
   }
 }
