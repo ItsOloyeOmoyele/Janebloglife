@@ -76,7 +76,6 @@ h1 {
 #content3 {
   padding: 0.8rem 1rem;
   margin: 0.8rem 1.3rem;
-  /* border: 4px solid yellow; */
   background-color: hsl(231, 100%, 99%);
 }
 
@@ -95,14 +94,12 @@ h1 {
 
 #aside {
   margin: 0.8rem 1.3rem;
-  /* border: 2px solid yellow; */
 }
 
 .aside-section {
   margin-top: 1em;
   margin-bottom: 1em;
   background-color: hsl(231, 100%, 99%);
-  /* border: 2px solid red; */
 }
 
 .aside-heading {
@@ -111,7 +108,6 @@ h1 {
   padding: 1em;
   margin-bottom: 0.2em;
   margin-top: 0;
-  /* border: 2px solid blue; */
 }
 
 /* start of popular posts */
@@ -126,7 +122,6 @@ h1 {
 }
 
 #popularposts {
-  /* border: 2px solid brown; */
 }
 
 .popularposts-section {
@@ -143,14 +138,12 @@ h1 {
 .position-right {
   width: 80%;
   float: right;
-  /* border: 2px solid red; */
   height: 4.5rem;
   line-height: 0;
 }
 
 .position-left {
   float: left;
-  /* border: 4px solid blue; */
   width: 15%;
   height: 100%;
 }
@@ -169,7 +162,6 @@ h1 {
   padding: 3.8em 0;
   background-color: hsl(0, 5%, 92%);
   margin: 1em;
-  /* border: solid blue 2px; */
 }
 
 /* end of advertise */
@@ -288,12 +280,10 @@ h1 {
 
   #content {
     width: 65%;
-    border: 2px solid blue;
     margin-top: 12px;
   }
 
   #aside {
-    border: solid 2px red;
     width: 35%;
   }
 
