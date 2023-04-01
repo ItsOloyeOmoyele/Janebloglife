@@ -55,22 +55,30 @@ h1 {
 
 .position-in-big-image {
   position: absolute;
-  top: 30%;
+  top: 50%;
   left: 2%;
   background: transparent;
   color: hsl(222, 34%, 98%);
+  transform: translateY(-50%);
 }
 
-#header h2 {
+.position-in-big-image h1 {
+  margin: 0;
+  /* border: solid white 2px; */
+  margin-top: -10px;
+}
+
+.position-in-big-image h2 {
   font-size: 2em;
   letter-spacing: 4px;
+  /* border: solid white 2px; */
 }
 
 #header button {
   background-color: hsl(0, 0%, 90%);
   font-size: 15px;
   font-weight: 700;
-  opacity: 0.5;
+  opacity: 0.6;
   letter-spacing: em;
   padding: 1.3em 1.7em;
   border: none;
@@ -152,7 +160,7 @@ h1 {
 /* ==== START OF ASIDE ==== */
 
 #aside {
-  margin: 0.8rem 1.3rem;
+  margin: 1.5rem 2rem;
 }
 
 .aside-section {
@@ -182,7 +190,7 @@ h1 {
 
 .popularposts-section {
   width: 100%;
-  border-top: 1px solid grey;
+  border-top: 1px solid hsl(0, 0%, 75%);
   padding: 0.6em 0.8em;
   height: 5rem;
 }
@@ -251,16 +259,14 @@ h1 {
 
 /* inspirations */
 
-#pics-container {
-  text-align: center;
-  width: auto;
+.pics-container {
+  padding: 0.6em;
 }
 
-.inspirationpics {
-  margin: 0.5em;
-  text-align: center;
-  width: 45%;
-  display: inline-block;
+.inspiration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5em;
 }
 
 .zero-marginleft {
@@ -277,6 +283,15 @@ h1 {
 
 #socials {
   padding: 1em;
+}
+
+.fa-brands {
+  font-size: 1.3em;
+  margin-right: 4px;
+}
+
+.fa-brands:hover {
+  opacity: 0.4;
 }
 
 /* end of followme */
@@ -353,7 +368,7 @@ h1 {
   text-decoration: underline;
 }
 
-@media (min-width: 600px) and (max-width: 859px) {
+@media (min-width: 600px) and (max-width: 860px) {
   .position-right {
     width: 85%;
   }
@@ -362,12 +377,12 @@ h1 {
   }
   .display-in-big-screen {
     display: block;
-    font-size: 3.4em;
+    font-size: 3em;
     font-weight: 600;
   }
 }
 
-@media (min-width: 860px) {
+@media (min-width: 861px) {
   .split {
     display: flex;
   }
@@ -382,24 +397,9 @@ h1 {
     margin-left: 0;
   }
 
-  #img-with-sub-btn {
-    position: relative;
-  }
-
-  .position-in-big-image {
-    position: absolute;
-    top: 40%;
-    padding-left: 0;
-    margin-left: 0;
-  }
-
-  #header h2 {
-    margin-bottom: -15px;
-  }
-
   .display-in-big-screen {
     display: block;
-    font-size: 3.4em;
+    font-size: 3em;
     font-weight: 600;
   }
 }
