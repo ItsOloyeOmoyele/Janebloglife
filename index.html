@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JANEBLOG</title>
   <link rel="stylesheet" href="janeblog.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https:/kit.fontawesome.com/cb911d3ab2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,6 +18,29 @@
 
   <!-- START OF HEADER -->
   <div id="header">
+    <div class="social-nav">
+      <i class='fa-brands fa-square-facebook'>
+        <a href="wwww.facebook.com"></a>
+      </i>
+      <i class='fa-brands fa-instagram'>
+        <a href="wwww.instagram.com"></a>
+      </i>
+      <i class='fa-brands fa-square-snapchat'>
+        <a href="wwww.snapchat.com"></a>
+      </i>
+      <i class='fa-brands fa-pinterest-p'>
+        <a href="wwww.pinterest.com"></a>
+      </i>
+      <i class='fa-brands fa-twitter'>
+        <a href="wwww.twitter.com"></a>
+      </i>
+      <i class='fa-brands fa-linkedin-in'>
+        <a href="wwww.linkedin.com."></a>
+      </i>
+      <i class="fa-solid fa-magnifying-glass">
+        <a href=""></a>
+      </i>
+    </div>
     <div id="heading">
       <h1>JANE BLOGLIFE</h1>
       <h4>
@@ -21,11 +48,11 @@
       </h4>
     </div>
     <div id="img-with-sub-btn">
-      <img src="jane.jpg" alt="jane" class="bigimage" width="1600" height="1060" />
+      <img src="big-image.jpg" alt="jane" class="bigimage" width="1600" height="1060" />
       <div class="position-in-big-image">
         <h2>Jane's</h2>
         <h1 class="display-in-big-screen">FASHION BLOG</h1>
-        <h3><button>SUBSCRIBE</button></h3>
+        <button id="sub-btn">SUBSCRIBE</button>
       </div>
     </div>
   </div>
@@ -63,11 +90,17 @@
           <button class="like">
             <i class='fa-solid fa-thumbs-up'></i>Like
           </button>
-          <button class="replies-btn">
+          <button class="replies-btn reply-btn1">
             Replies <span class="replies-btn-count">1</span>
           </button>
         </div>
-        <div class="replies">
+        <div class="replies content1-replies">
+          <hr />
+          <form class="reply">
+            <input placeholder="Name" type="text">
+            <input type="text" placeholder="Comment" required>
+            <button>Reply</button>
+          </form>
           <hr />
           <div id="man-with-smoke">
             <img src="./avatar_smoke.jpg" alt="manwithcigar" />
@@ -95,21 +128,26 @@
           Some text about this blog entry. Fashion fashion and Lorem ipsum dolor
           sit amet consectetur, adipisicing elit. Ipsam consequatur dolore dolor
           nostrum fugit, iure ullam nobis animi a eum magni, asperiores
-          perspiciatis quibusdam minima maiores odio sint? Nisi debitis, veniam
-          culpa voluptates quidem id ratione sit porro saepe modi!
+          perspes odi placeholder="Name"o sint? Nisi debitis, id ratione sit porro saepe mo placeholder="Comment"di!
         </p>
         <div class="flex-btn">
           <button class="like">
             <i class='fa-solid fa-thumbs-up'></i>Like
           </button>
-          <button class="replies-btn">
+          <button class="replies-btn reply-btn2">
             Replies <span class="replies-btn-count">2</span>
           </button>
         </div>
-        <div class="replies">
+        <div class="replies content2-replies">
+          <hr />
+          <form class="reply">
+            <input placeholder="Name" type="text">
+            <input type="text" placeholder="Comment" required>
+            <button>Reply</button>
+          </form>
           <hr />
           <div id="man-with-smoke">
-            <img src="./avatar_smoke.jpg" alt="manwithcigar" />
+            <img src="./amber.jpg" alt="manwithcigar" />
           </div>
           <p>
           <h4>Amber <span class="date">April 26, 2015, 10:52 PM</span></h4>
@@ -117,7 +155,7 @@
           <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <div id="man-with-smoke">
-            <img src="./avatar_smoke.jpg" alt="manwithcigar" />
+            <img src="./Angie.jpg" alt="manwithcigar" />
           </div>
           <p>
           <h4>Angie <span class="date">April 23, 2015, 9:12 PM</span></h4>
@@ -151,21 +189,27 @@
           <button class="like" id="like">
             <i class='fa-solid fa-thumbs-up'></i>Like
           </button>
-          <button class="replies-btn">
+          <button class="replies-btn reply-btn3">
             Replies <span class="replies-btn-count">3</span>
           </button>
         </div>
-        <div class="replies">
+        <div class="replies content3-replies">
+          <hr />
+          <form class="reply">
+            <input placeholder="Name" type="text">
+            <input type="text" placeholder="Comment" required>
+            <button>Reply</button>
+          </form>
           <hr />
           <div id="man-with-smoke">
-            <img src="./avatar_smoke.jpg" alt="manwithcigar" />
+            <img src="./jane.jpg" alt="manwithcigar" />
           </div>
           <p>
           <h4>Jane <span class="date">April 10, 2015, 7:22 PM</span></h4>
           </p>
           <p>That was a great runway show! Thanks for everything.</p>
           <div id="man-with-smoke">
-            <img src="./avatar_smoke.jpg" alt="manwithcigar" />
+            <img src="./John.jpg" alt="manwithcigar" />
           </div>
           <p>
           <h4>
@@ -175,7 +219,7 @@
           <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit,
             sed do eiusmod tempor incididunt.</p>
           <div id="man-with-smoke">
-            <img src="./avatar_smoke.jpg" alt="manwithcigar" />
+            <img src="./Anja.jpg" alt="manwithcigar" />
           </div>
           <p>
           <h4>Anja <span class="date">April 7, 2015, 9:12 PM</span></h4>
@@ -321,26 +365,29 @@
             <input type="email" name="email" placeholder="Enter e-mail" class="email" required />
             <button class="sub-button">Subscribe</button>
         </div>
-        <div id="popup-subscribe" class="subscribe">
-          <h3 class="aside-heading">SUBSCRIBE</h3>
-          <form class="subscribeform">
-            <p>Join my mailing list to recieve updates on the latest blog post and other things.</p>
-            <input type="email" name="email" placeholder="Enter e-mail" class="email" required />
-            <button class="sub-button">Subscribe</button>
+        <div class="close-btn-positioning">
+          <div class="popup-subscribe subscribe">
+            <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+            <h3 class="aside-heading">SUBSCRIBE</h3>
+            <form class="subscribeform">
+              <p>Join my mailing list to recieve updates on the latest blog post and other things.</p>
+              <input type="email" name="email" placeholder="Enter e-mail" class="email" required />
+              <button class="sub-button">Subscribe</button>
+            </form>
+          </div>
         </div>
       </div>
+      <!-- END OF ASIDE -->
     </div>
-    <!-- END OF ASIDE -->
-  </div>
 
-  <!-- START OF FOOTER -->
-  <div id="footer">
-    <button id="top">To the top</button>
-    <p>Powered by <span id="whoknows">whoknows</span></p>
-  </div>
-  <!-- END OF FOOTER -->
+    <!-- START OF FOOTER -->
+    <div id="footer">
+      <button id="top">To the top</button>
+      <p>Powered by <span id="whoknows">whoknows</span></p>
+    </div>
+    <!-- END OF FOOTER -->
 
-  <script src="index.js"></script>
+    <script src="index.js"></script>
 
 </body>
 

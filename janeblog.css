@@ -4,9 +4,17 @@
 
 body {
   background-color: hsl(0, 0%, 95%);
-  font-family: Oswald, sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+#header button {
+  font-family: "Oswald", sans-serif;
 }
 
 img {
@@ -17,26 +25,102 @@ img {
 }
 
 p {
-  letter-spacing: 0.4px;
+  font-size: 0.9em;
+  letter-spacing: 0.2px;
+  font-family: "Open Sans";
+  line-height: 130%;
+  word-spacing: 2px;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 400;
+}
+
+/*       icons       */
+.fa-thumbs-up::before {
+  content: "\f164";
+}
+
+.fa-square-facebook::before {
+  content: "\f082";
+}
+
+.fa-instagram::before {
+  content: "\f16d";
+}
+
+.fa-square-snapchat::before {
+  content: "\f2ad";
+}
+
+.fa-pinterest-p::before {
+  content: "\f231";
+}
+
+.fa-twitter::before {
+  content: "\f099";
+}
+
+.fa-linkedin-in::before {
+  content: "\f0e1";
+}
+
+.fa-magnifying-glass::before {
+  content: "\f002";
+}
+
+.fa-xmark::before {
+  content: "\f00d";
 }
 
 /* ==== START OF HEADER ==== */
+
+.social-nav {
+  position: absolute;
+  width: 100%;
+  font-size: 0.8em;
+  background-color: black;
+  color: white;
+  display: none;
+}
+
+.social-nav i {
+  padding: 12px 15px;
+}
+
+.social-nav i:hover,
+.close-btn:hover {
+  background-color: hsl(0, 0%, 80%);
+  color: black;
+}
 
 #header {
   width: 100%;
 }
 
 #heading {
-  height: 15em;
   padding: 3em 0;
   text-align: center;
   background-color: hsl(0, 0%, 100%);
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  margin-bottom: 0.3em;
+#heading h1 {
+  font-size: 3rem;
+}
+
+#heading h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+#heading h4 {
+  margin-top: -1.5em;
 }
 
 #janesworld {
@@ -47,6 +131,7 @@ h1 {
 
 .display-in-big-screen {
   display: none;
+  letter-spacing: 3px;
 }
 
 #img-with-sub-btn {
@@ -64,24 +149,22 @@ h1 {
 
 .position-in-big-image h1 {
   margin: 0;
-  /* border: solid white 2px; */
   margin-top: -10px;
 }
 
 .position-in-big-image h2 {
   font-size: 2em;
   letter-spacing: 4px;
-  /* border: solid white 2px; */
 }
 
 #header button {
   background-color: hsl(0, 0%, 90%);
-  font-size: 15px;
-  font-weight: 700;
   opacity: 0.6;
-  letter-spacing: em;
-  padding: 1.3em 1.7em;
+  font-size: 1.1em;
+  padding: 0.6em 1.2em;
+  margin-top: 0.7em;
   border: none;
+  cursor: pointer;
 }
 
 #header button:active {
@@ -101,7 +184,7 @@ h1 {
 #content2,
 #content3 {
   padding: 0.8rem 1.4rem;
-  margin: 1.5rem 2rem;
+  margin: 1.5rem 1.5rem;
   background-color: white;
 }
 
@@ -115,7 +198,7 @@ h1 {
 }
 
 .bold {
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .flex-btn {
@@ -125,10 +208,10 @@ h1 {
 
 .like {
   background-color: white;
-  font-weight: 600;
   font-size: 1rem;
   padding: 0.7em;
   border: solid 1px hsl(0, 0%, 75%);
+  cursor: pointer;
 }
 
 .like:hover {
@@ -141,6 +224,12 @@ h1 {
   font-size: 1rem;
   padding: 0.7em;
   border: none;
+  cursor: pointer;
+}
+
+.replies-btn:hover {
+  background-color: hsl(0, 0%, 80%);
+  color: black;
 }
 
 .replies-btn-count {
@@ -148,6 +237,14 @@ h1 {
   color: black;
   padding: 0.1em 0.4em;
   margin-left: 0.3em;
+}
+
+.replies {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 #man-with-smoke {
@@ -285,26 +382,28 @@ h1 {
   padding: 1em;
 }
 
-.fa-brands {
+#followme .fa-brands {
   font-size: 1.3em;
   margin-right: 4px;
 }
 
-.fa-brands:hover {
+#followme .fa-brands:hover {
   opacity: 0.4;
 }
 
 /* end of followme */
 
-/* subscribe */
+/* forms */
 
-.subscribeform {
+.subscribeform,
+.reply {
   padding: 1em;
   padding-top: 0.1em;
   margin-top: -0.2em;
 }
 
-.email {
+.email,
+.reply input {
   font-size: 1em;
   width: 100%;
   margin-bottom: 0.7em;
@@ -312,21 +411,24 @@ h1 {
   border: solid 1px hsl(0, 0%, 75%);
 }
 
-.sub-button {
+.sub-button,
+.reply button {
   width: 100%;
   font-size: 1em;
   background-color: hsl(0, 85%, 50%);
   border: none;
   padding: 0.6em;
   color: white;
+  cursor: pointer;
 }
 
-.sub-button:hover {
+.sub-button:hover,
+.reply button:hover {
   background-color: hsl(0, 0%, 80%);
   color: black;
 }
 
-#popup-subscribe {
+.popup-subscribe {
   background-color: white;
   padding: 2.5rem;
   position: fixed;
@@ -336,12 +438,29 @@ h1 {
   display: none;
 }
 
-#popup-subscribe h3 {
+.close-btn-positioning {
+  position: relative;
+}
+
+.close-btn {
+  font-size: 1.5em;
+  position: absolute;
+  right: 10%;
+  top: 12%;
+  cursor: pointer;
+  padding: 3px 12px;
+}
+
+.popup-subscribe h3 {
+  letter-spacing: 0.2em;
   background-color: inherit;
   color: black;
   font-size: 1.5em;
-  font-weight: 500;
   padding: 0;
+}
+
+.reply {
+  margin-top: 1.2em;
 }
 
 /* end of subscribe */
@@ -369,6 +488,10 @@ h1 {
 }
 
 @media (min-width: 600px) and (max-width: 860px) {
+  .social-nav {
+    display: block;
+  }
+
   .position-right {
     width: 85%;
   }
@@ -377,12 +500,23 @@ h1 {
   }
   .display-in-big-screen {
     display: block;
-    font-size: 3em;
-    font-weight: 600;
+    font-size: 4em;
+  }
+
+  .popup-subscribe {
+    display: none;
+  }
+
+  .show {
+    display: block;
   }
 }
 
 @media (min-width: 861px) {
+  .social-nav {
+    display: block;
+  }
+
   .split {
     display: flex;
   }
@@ -399,7 +533,14 @@ h1 {
 
   .display-in-big-screen {
     display: block;
-    font-size: 3em;
-    font-weight: 600;
+    font-size: 4.5em;
+  }
+
+  .popup-subscribe {
+    display: none;
+  }
+
+  .show {
+    display: block;
   }
 }
