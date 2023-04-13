@@ -5,17 +5,26 @@ const repliesBtn3 = document.querySelector(".reply-btn3");
 const firstReplies = document.querySelector(".content1-replies");
 const secondReplies = document.querySelector(".content2-replies");
 const thirdReplies = document.querySelector(".content3-replies");
-const subBtn = document.querySelector("#sub-btn");
+const subBtn2 = document.querySelector("#sub-btn");
 const subPage = document.querySelector(".popup-subscribe");
 const closeBtn = document.querySelector(".close-btn");
+const dimBg = document.querySelector(".cover");
+const subBtn = document.querySelector(".sub-button");
 
 /* subcription page */
 subBtn.addEventListener("click", () => {
+  dimBg.classList.add("show-cover");
+  subPage.classList.add("show");
+});
+
+subBtn2.addEventListener("click", () => {
+  dimBg.classList.add("show-cover");
   subPage.classList.add("show");
 });
 
 closeBtn.addEventListener("click", () => {
   subPage.classList.remove("show");
+  dimBg.classList.remove("show-cover");
 });
 
 /* like-button icon swap */

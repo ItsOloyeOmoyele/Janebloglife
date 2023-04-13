@@ -7,6 +7,7 @@ body {
   font-family: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
+  position: relative;
 }
 
 h1,
@@ -40,6 +41,28 @@ h2,
 h3,
 h4 {
   font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cover {
+  display: block;
+  position: absolute;
+  top: 0;
+  /* bottom: 0; */
+  right: 0;
+  left: 0;
+  background-color: black;
+  z-index: 1;
+  opacity: 0.3;
+  transition: background-color 3s ease-in;
+}
+
+.show-cover {
+  bottom: 0;
 }
 
 /*       icons       */
@@ -80,7 +103,6 @@ h4 {
 }
 
 /* ==== START OF HEADER ==== */
-
 .social-nav {
   position: absolute;
   width: 100%;
@@ -436,6 +458,7 @@ h4 {
   left: 20%;
   right: 20%;
   display: none;
+  z-index: 2;
 }
 
 .close-btn-positioning {
@@ -481,6 +504,12 @@ h4 {
   padding: 0.8em 1.4em;
   border: none;
   font-size: 1em;
+  cursor: pointer;
+}
+
+#top:hover {
+  background-color: hsl(0, 0%, 80%);
+  color: black;
 }
 
 #whoknows {
