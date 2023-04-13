@@ -26,7 +26,9 @@ likeButtons.forEach((item) => {
 });
 
 /* replies display */
-firstReplies.style.display = "block";
+repliesBtn1.addEventListener("click", () => {
+  firstReplies.classList.toggle("show");
+});
 
 repliesBtn2.addEventListener("click", () => {
   secondReplies.classList.toggle("show");
