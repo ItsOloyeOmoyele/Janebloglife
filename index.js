@@ -9,7 +9,7 @@ const subBtn2 = document.querySelector("#sub-btn");
 const subPage = document.querySelector(".popup-subscribe");
 const closeBtn = document.querySelector(".close-btn");
 const dimBg = document.querySelector(".cover");
-const subBtn = document.querySelector(".sub-button");
+const subBtn = document.querySelector("#sub-btn2");
 
 /* subcription page */
 subBtn.addEventListener("click", () => {
